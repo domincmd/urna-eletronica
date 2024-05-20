@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vote!</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+    
+    <form action="/vote" method="POST" class="form">
+        <h1>Vote!</h1>
+        <input type="number" name="votesala" id="votesala" placeholder="Sala...">
+        <p class="small-text">Escreva um número de 6 a 9</p>
+        <input type="number" name="votenumero" id="votenumero" placeholder="Numero...">
+        <p class="small-text">Os números dos candidatos estão presentes nas salas</p>
+        <input type="submit" value="Contar Voto!">
+        <p class="small-text top">Cuidado! O voto NÃO pode ser desfeito depois de contabilizado!</p>
+    </form>
+</body>
+</html>

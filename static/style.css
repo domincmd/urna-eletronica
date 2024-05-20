@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif; /* Sets a nice, readable font */
+    background-color: #f4f4f4; /* Light grey background */
+    display: flex;
+    justify-content: center; /* Centers the form horizontally */
+    align-items: center; /* Centers the form vertically */
+    height: 100vh; /* Full viewport height */
+    margin: 0; /* Removes default margin */
+}
+
+.form, .box {
+    background-color: white; /* White background for the form */
+    padding: 20px; /* Adds space inside the form */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow */
+    width: 300px; /* Sets a fixed width for the form */
+
+}
+
+form, .box {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+h1, p {
+    text-align: center; /* Centers the title and subtitle */
+    color: #333; /* Dark grey color for better readability */
+}
+
+h1 {
+    margin-bottom: 0.5em; /* Space below the title */
+}
+
+p {
+    margin-bottom: 1em; /* Space below the subtitle */
+    font-size: 0.9em; /* Smaller font size for the subtitle */
+}
+
+input[type="text"], input[type="number"] {
+    padding: 8px;
+    margin-bottom: 10px; /* Adds space below the text field */
+    border: 1px solid #ccc; /* Light grey border */
+    border-radius: 4px; /* Rounded corners for the text field */
+}
+
+input[type="submit"], button {
+    background-color: #007BFF; /* Bootstrap blue */
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+input[type="submit"]:hover, button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.small-text {
+    text-align: left;
+    margin: 0px;
+    margin-bottom: 15px;
+    color: #747474;
+}
+
+.top {
+    margin: 0px;
+    margin-top: 15px;
+}
+
+.error {
+    background-color: #ff3030;
+}
+
+.error:hover {
+    background-color: #ff0000;
+}
